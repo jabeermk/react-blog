@@ -1,6 +1,6 @@
 const mongoose=require('mongoose');
 
-const userShema=mongoose.Schema({
+const userSchema=mongoose.Schema({
 name:{
     type:String,
     maxlength:50
@@ -31,6 +31,6 @@ tokenExp:{
 }
 
 })
-const userShema=mongoose.model('User',userShema)
+const User=mongoose.model('User',userSchema)
 
 module.exports={User}
