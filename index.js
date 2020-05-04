@@ -4,7 +4,8 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 const config=require('./config/key')
-
+const gitExtension = vscode.extensions.getExtension<GitExtension>('vscode.git').exports;
+const git = gitExtension.getAPI(1)
 
 const { User } = require('./models/user');
 
