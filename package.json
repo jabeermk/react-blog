@@ -5,11 +5,11 @@
   "main": "index.js",
   "ëngine": {
     "node": "12.16.2",
-    "npm": "6.10.1"
+    "npm": "6.14.5"
   },
   "scripts": {
-    "start": "node server/index.js",
-    "backend": "nodemon server/index.js"
+    "start":"node server/index.js",
+    "backend":"nodemon server/index.js"
   },
   "author": "jbr",
   "license": "ISC",
