@@ -89,15 +89,15 @@ app.get('/api/user/logout', auth, (req, res) => {
 //     res.send('hello world')
 // });
 
-// app.listen(process.env.PORT || 5000, function(){
-//     console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
-//   });
+app.listen(process.env.PORT || 5000, function(){
+    console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+  });
 
-const port = process.env.PORT || 5000
+// const port = process.env.PORT || 5000
 
-app.listen(port, () => {
-  console.log(`Server Listening on ${port}`)
-});
+// app.listen(process.env.PORT, () => {
+//     console.log(`Server Runninng at ${port}`)
+// });
 
 // app.get('/', (req, res) => {
 //     res.json('jsonnodemon..ajfkajfskjfklsjfksdj')
