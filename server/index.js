@@ -22,7 +22,7 @@ app.use(cookieParser());
 
 
 app.get('/', (req, res) => {
-    res.json({"hello":"I am happy to deploy our application"})
+    res.json({ "hello": "I am happy to deploy our application" })
 });
 
 app.get('/api/user/auth', auth, (req, res) => {
@@ -90,10 +90,10 @@ app.get('/api/user/logout', auth, (req, res) => {
 // });
 
 
-const port=process.env.PORT || 5000
+const port = process.env.PORT || 5000
 
-app.listen(port,()=>{
-    console.log('Server Runninng at ${port}')
+app.listen(port, () => {
+    console.log(`Server Runninng at ${port}`)
 });
 
 app.get('/', (req, res) => {
