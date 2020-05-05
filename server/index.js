@@ -99,6 +99,6 @@ app.listen(process.env.PORT || 5000, function(){
 //     console.log(`Server Runninng at ${port}`)
 // });
 
-app.get('/', (req, res) => {
-    res.json('jsonnodemon..ajfkajfskjfklsjfksdj')
-});
+// app.get('/', (req, res) => {
+//     res.json('jsonnodemon..ajfkajfskjfklsjfksdj')
+// });
