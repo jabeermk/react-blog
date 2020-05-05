@@ -96,6 +96,6 @@ app.listen(port, () => {
     console.log(`Server Runninng at ${port}`)
 });
 
-app.get('/', (req, res) => {
-    res.json('jsonnodemon..ajfkajfskjfklsjfksdj')
-});
+// app.get('/', (req, res) => {
+//     res.json('jsonnodemon..ajfkajfskjfklsjfksdj')
+// });
