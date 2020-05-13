@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import { loginUser } from '../../actions/user_actions'
+import {Link} from 'react-router-dom';
+
 class RegisterLogin extends Component {
     state = {
         email: '',
@@ -12,7 +14,7 @@ class RegisterLogin extends Component {
     displayErrors = errors =>
         errors.map((error, i) => <p key={i}>{error}</p>)
 
-    //email change   
+    //Textbox change   
     handleChange = event => {
         this.setState({ [event.target.name]: event.target.value })
     };//close
@@ -96,15 +98,22 @@ class RegisterLogin extends Component {
                         )}
 
                         <div className="row">
-                            <div className="col 12">
+                            <div className="col s12">
                                 <button className="btn waves-effect red lighten-2"
                                     type="submit" name="action" onClick={this.submitForm}
-                                >Login</button>
+                                >Login</button>  
+                                &nbsp;&nbsp;
+                                <Link to='/register'>
+                                <button className="btn waves-effect red lighten-2"
+                                    type="submit" name="action">
+                                Sign Up</button>
+                                </Link>
                             </div>
+                           
                         </div>
                     </form>
                 </div>
- login page
+
             </div>
         );
     }
