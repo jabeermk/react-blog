@@ -21,7 +21,7 @@
     "concurrently": "^5.2.0",
     "cookie-parser": "^1.4.3",
     "express": "^4.17.1",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "mongoose": "^5.9.11",
     "npm-git-install": "^0.3.0",
     "react-router-dom": "^5.1.2",
